@@ -1,8 +1,24 @@
-<ul>
-    <li><a routerlink="/home">Dashboard</a></li>
-    <li><a routerlink="/home/todo" >Todo</a></li>
+<div class="flex-list">
+  <ul>
+    <li>
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Dashboard</a
+      >
+    </li>
+    <li>
+      <a
+        routerLink="/home/todo"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >TODO</a
+      >
+    </li>
     <li><a>Logout</a></li>
-</ul>
+  </ul>
+</div>
 <div>
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>

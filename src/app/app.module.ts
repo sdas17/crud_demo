@@ -10,6 +10,8 @@ import { HomeComponent } from './home.component';
 import { NotFoundComponent } from './todo/Notfound.component';
 import {AccordionModule} from 'primeng/accordion';  
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 const routes:Routes =[
 {path:'',component:LoginComponent},
 {path:"LoginComponent",component:LoginComponent},
@@ -29,8 +31,8 @@ const routes:Routes =[
     AppComponent,NotFoundComponent, HomeComponent
   ],
   imports: [
-    BrowserModule,AccordionModule,FormsModule,ReactiveFormsModule,PanelModule,
-    AppRoutingModule,RouterModule.forRoot(routes)
+    BrowserModule,AccordionModule,ReactiveFormsModule,PanelModule,
+    AppRoutingModule,RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
